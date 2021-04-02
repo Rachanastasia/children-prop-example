@@ -17,27 +17,30 @@ View the [live version](https://children-prop.vercel.app/) of this code.
 
 ## Codebase
 
-## pages/index
+### pages/index
 
 This component imports the list component and renders it twice, once for each of the files of sample data. 
 
-## components/Lists
+### components/Lists
 
 This file contains four components: 
 
-### Lists
+#### Lists
 
 This component displays the title and maps through the sample data, returning either **ListItemFood** or **ListItemBeverage** depending on the list's type. 
 
-### ListItemFood/ListItemBeverage
+#### ListItemFood/ListItemBeverage
 
 These components display item-specific content, such as ingredients for food or origin and abv for beverages. They are wrapped in the **ListItem** component.
 
-### ListItem
+#### ListItem
 
 This component renders non-item-specific content such as name, price, and dietary restrictions. It wraps the above component, returning the children to be returned to the left of the content. 
 
+#### WinePricing
 
-## hooks/useDietaryRestrictionIcon
+Just adding a little extra realism to the menu. 
+
+### hooks/useDietaryRestrictionIcon
 
 This hook imports all of the icons for dietary restrictions and returns the correct one through a switch statement. 
