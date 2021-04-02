@@ -12,6 +12,17 @@ export default function Lists({list, type}){
    )
 }
 
+export function ListItem({children, name, price}){
+    return (
+        <div className='list-item-wrapper'>
+            <div className='list-item-title-price'>
+                <h3>{name}</h3>
+                <span className='list-item-price'>{price}</span>
+            </div>
+            {children}
+        </div>
+    )
+}
 
 export function ListItemFood({ingredients, name, price}){
 
@@ -39,14 +50,3 @@ export function ListItemBeverage({abv, origin, year, name, price}){
 }
 
 
-export function ListItem({children, name, price}){
-    return (
-        <div className='list-item-wrapper'>
-            <div className='list-item-title-price'>
-                <h3>{name}</h3>
-                <span className='list-item-price'>{price}</span>
-            </div>
-            {children}
-        </div>
-    )
-}

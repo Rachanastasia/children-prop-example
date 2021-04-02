@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "Cheese Pizza",
-        "price": "$16.00",
+        "price": "$16",
         "ingredients": [
             "oven baked crust",
             "mozzerella",
@@ -12,7 +12,7 @@
     {
         "id": 2,
         "name": "Margherita Pizza",
-        "price": "$18.00",
+        "price": "$18",
         "ingredients": [
             "oven baked crust",
             "mozzerella",
@@ -24,7 +24,7 @@
     {
         "id": 3,
         "name": "White Pizza",
-        "price": "$18.00",
+        "price": "$18",
         "ingredients": [
             "oven baked crust",
             "minced garlic",
@@ -37,7 +37,7 @@
     {
         "id": 4,
         "name": "Meat Lovers Pizza",
-        "price": "$22.00",
+        "price": "$22",
         "ingredients": [
             "oven baked crust",
             "mozzerella",
@@ -51,7 +51,7 @@
     {
         "id": 5,
         "name": "Cheese Pizza",
-        "price": "$16.00",
+        "price": "$16",
         "ingredients": [
             "oven baked crust",
             "mozzerella",
@@ -61,7 +61,7 @@
     {
         "id": 6,
         "name": "Margherita Pizza",
-        "price": "$18.00",
+        "price": "$18",
         "ingredients": [
             "oven baked crust",
             "mozzerella",
@@ -73,7 +73,7 @@
     {
         "id": 7,
         "name": "White Pizza",
-        "price": "$18.00",
+        "price": "$18",
         "ingredients": [
             "oven baked crust",
             "minced garlic",
@@ -86,7 +86,7 @@
     {
         "id": 8,
         "name": "Meat Lovers Pizza",
-        "price": "$22.00",
+        "price": "$22",
         "ingredients": [
             "oven baked crust",
             "mozzerella",
