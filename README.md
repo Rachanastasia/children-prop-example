@@ -2,7 +2,7 @@
 
 An example of my favorite use case for the children prop to make UI elements more adaptable using a restaurant menu. 
 
-Read my [Medium post]() about this pattern.
+Read my [Medium post](https://rachanastasia.medium.com/using-the-children-prop-for-dry-ui-components-fe0bd2a036e3) about this pattern.
 
 View the [live version](https://children-prop.vercel.app/) of this code. 
 

@@ -4,7 +4,6 @@ import useDietaryRestrictionsIcon from '../hooks/useDietaryRestrictionsIcon'
 
 
 export default function Lists({list, type}){
-
    return (
        <section>
            <h2>{type}</h2>
@@ -14,12 +13,11 @@ export default function Lists({list, type}){
 }
 
 function ListItem({children, name, price, restrictions}){
-    const priceIsString = typeof price === 'string'
     return (
         <div className='list-item-wrapper'>
             <div className='list-item-title-price'>
                 <h3>{name}</h3>
-                {priceIsString ? <span className='list-item-price'>{price}</span> : <WinePricing {...price} />}
+                  <span className='list-item-price'>{price}</span> 
                 {restrictions && <div className='restrictions-wrapper'>{restrictions.map((r, index) => useDietaryRestrictionsIcon(r, index))}</div>}
             </div>
             {children}
@@ -36,7 +34,6 @@ function ListItemFood({ingredients, name, price, restrictions}){
                 </ul>
         </ListItem>
     )
-
 }
 
 
