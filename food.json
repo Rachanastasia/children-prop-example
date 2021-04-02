@@ -1,5 +1,52 @@
 [
     {
+        "id": 5,
+        "name": "Salmon",
+        "price": "$26",
+        "ingredients": [
+            "garlic",
+            "butter",
+            "fresh herbs",
+            "lemon",
+            "roasted potatoes"
+        ],
+        "restrictions": [
+            "dairy",
+            "fish"
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Shrimp Pasta",
+        "price": "$24",
+        "ingredients": [
+            "linguine",
+            "olive oil",
+            "spinach",
+            "parmesean cheese"
+        ],
+        "restrictions": [
+            "wheat",
+            "dairy",
+            "fish"
+        ]
+    },
+    {
+        "id": 7,
+        "name": "Steak Salad",
+        "price": "$24",
+        "ingredients": [
+            "arugula",
+            "cherry tomatoes",
+            "red onion",
+            "avacado",
+            "balsamic dressing"
+        ],
+        "restrictions": [
+            "meat"
+        ]
+    },
+    {
         "id": 1,
         "name": "Cheese Pizza",
         "price": "$16",
@@ -7,6 +54,11 @@
             "oven baked crust",
             "mozzerella",
             "marinara sauce"
+        ],
+        "restrictions": [
+            "wheat",
+            "dairy",
+            "veggie"
         ]
     },
     {
@@ -19,6 +71,11 @@
             "tomatoes",
             "fresh basil",
             "marinara sauce"
+        ],
+        "restrictions": [
+            "wheat",
+            "dairy",
+            "veggie"
         ]
     },
     {
@@ -32,11 +89,16 @@
             "pecorino",
             "mozzerella",
             "arugula"
+        ],
+        "restrictions": [
+            "wheat",
+            "dairy",
+            "veggie"
         ]
     },
     {
         "id": 4,
-        "name": "Meat Lovers Pizza",
+        "name": "Meat Pizza",
         "price": "$22",
         "ingredients": [
             "oven baked crust",
@@ -46,55 +108,11 @@
             "pepperoni",
             "Italian sausage",
             "marinara sauce"
-        ]
-    },
-    {
-        "id": 5,
-        "name": "Cheese Pizza",
-        "price": "$16",
-        "ingredients": [
-            "oven baked crust",
-            "mozzerella",
-            "marinara sauce"
-        ]
-    },
-    {
-        "id": 6,
-        "name": "Margherita Pizza",
-        "price": "$18",
-        "ingredients": [
-            "oven baked crust",
-            "mozzerella",
-            "tomatoes",
-            "fresh basil",
-            "marinara sauce"
-        ]
-    },
-    {
-        "id": 7,
-        "name": "White Pizza",
-        "price": "$18",
-        "ingredients": [
-            "oven baked crust",
-            "minced garlic",
-            "ricotta",
-            "pecorino",
-            "mozzerella",
-            "arugula"
-        ]
-    },
-    {
-        "id": 8,
-        "name": "Meat Lovers Pizza",
-        "price": "$22",
-        "ingredients": [
-            "oven baked crust",
-            "mozzerella",
-            "bacon",
-            "ham",
-            "pepperoni",
-            "Italian sausage",
-            "marinara sauce"
+        ],
+        "restrictions": [
+            "wheat",
+            "dairy",
+            "meat"
         ]
     }
     

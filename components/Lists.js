@@ -1,4 +1,5 @@
 import React from 'react'
+import useDietaryRestrictionsIcon from '../hooks/useDietaryRestrictionsIcon'
 
 
 
@@ -12,22 +13,24 @@ export default function Lists({list, type}){
    )
 }
 
-export function ListItem({children, name, price}){
+function ListItem({children, name, price, restrictions}){
+    const priceIsString = typeof price === 'string'
     return (
         <div className='list-item-wrapper'>
             <div className='list-item-title-price'>
                 <h3>{name}</h3>
-                <span className='list-item-price'>{price}</span>
+                {priceIsString ? <span className='list-item-price'>{price}</span> : <WinePricing {...price} />}
+                {restrictions && <div className='restrictions-wrapper'>{restrictions.map((r, index) => useDietaryRestrictionsIcon(r, index))}</div>}
             </div>
             {children}
         </div>
     )
 }
 
-export function ListItemFood({ingredients, name, price}){
+function ListItemFood({ingredients, name, price, restrictions}){
 
     return (
-        <ListItem name={name} price={price}>
+        <ListItem name={name} price={price} restrictions={restrictions}>
                 <ul className='ingredients-wrapper'> 
                     {ingredients.map((i, index) => <li key={index}>{i}</li>)}
                 </ul>
@@ -37,9 +40,9 @@ export function ListItemFood({ingredients, name, price}){
 }
 
 
-export function ListItemBeverage({abv, origin, year, name, price}){
+function ListItemBeverage({abv, origin, year, name, price, restrictions}){
     return (
-        <ListItem name={name} price={price}>    
+        <ListItem name={name} price={price} restrictions={restrictions}>    
             <div className='wine-details-wrapper'>
                 <h5>{origin}</h5>
                 <span>{year}</span>
@@ -48,5 +51,22 @@ export function ListItemBeverage({abv, origin, year, name, price}){
         </ListItem>
     )
 }
+
+function WinePricing({glass, bottle}){
+    return (
+        <div className='wine-pricing-wrapper'>
+            <div className='pricing-item-wrapper'>
+                <h6>Glass</h6>
+                <span className='list-item-price'>{glass}</span>
+            </div>
+            <div className='pricing-item-wrapper'>
+                <h6>Bottle</h6>
+                <span className='list-item-price'>{bottle}</span>
+            </div>
+        </div>
+    )
+}
+
+
 
 

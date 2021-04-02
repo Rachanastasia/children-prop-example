@@ -1,58 +1,63 @@
 [
+    
+    {
+        "id": 6,
+        "name": "Peroni",
+        "price": "$12",
+        "origin": "Munich",
+        "abv": "7%",
+        "restrictions": [
+            "wheat"
+        ]
+    },
+    {
+        "id": 5,
+        "name": "German-style Dopplebock",
+        "price": "$12",
+        "origin": "Munich",
+        "abv": "7%",
+        "restrictions": [
+            "wheat"
+        ]
+    },
+    {
+        "id": 7,
+        "name": "Gluten-free Lager",
+        "price": "$10",
+        "origin": "Wisconsin",
+        "abv": "5%"
+    },
+    {
+        "id": 4,
+        "name": "Double IPA",
+        "origin": "Michigan",
+        "price": "$10",
+        "abv": "7.5%"
+    },
     {
         "id": 1,
         "name": "Cabernet",
-        "price": "$14",
+        "price": {"glass":"$14", "bottle":"$50"},
         "origin": "Napa Valley",
         "year": "2017",
         "abv": "11.5%"
     },
     {
         "id": 2,
-        "name": "Cabernet",
-        "price": "$14",
+        "name": "Pinot Noir",
+        "price": {"glass":"$16", "bottle":"$54"},
         "origin": "Napa Valley",
-        "year": "2017",
-        "abv": "11.5%"
+        "year": "2018",
+        "abv": "13.5%"
     },
     {
         "id": 3,
-        "name": "Cabernet",
-        "price": "$14",
-        "origin": "Napa Valley",
-        "year": "2017",
-        "abv": "11.5%"
-    },
-    {
-        "id": 4,
-        "name": "Cabernet",
-        "price": "$14",
-        "origin": "Napa Valley",
-        "year": "2017",
-        "abv": "11.5%"
-    },
-    {
-        "id": 5,
-        "name": "Cabernet",
-        "price": "$14",
-        "origin": "Napa Valley",
-        "year": "2017",
-        "abv": "11.5%"
-    },
-    {
-        "id": 6,
-        "name": "Cabernet",
-        "price": "$14",
-        "origin": "Napa Valley",
-        "year": "2017",
-        "abv": "11.5%"
-    },
-    {
-        "id": 7,
-        "name": "Cabernet",
-        "price": "$14",
-        "origin": "Napa Valley",
-        "year": "2017",
-        "abv": "11.5%"
+        "name": "Malbec",
+        "price": {"glass":"$22", "bottle":"$75"},
+        "origin": "Mendoza",
+        "year": "2016",
+        "abv": "12.5%"
     }
+    
+   
 ]

@@ -4,18 +4,18 @@
 }
 
 main{
-    background:#E5E7EB;
+    background:#f3f8f4;
     color: rgb(0, 3, 2);
-    padding: 0 1rem;
+    padding: 2rem 1rem;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 section{
     flex: 1;
     padding: 1rem;
+    max-width: 350px;
 }
 
 h2{
@@ -38,7 +38,7 @@ h5{
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
-    height: 140px;
+    min-height: 140px;
 }
 
 .list-item-title-price{
@@ -50,8 +50,14 @@ h5{
 }
 
 .list-item-price{
-    padding: 1.5rem 0;
+    padding: 0.5rem 0;
     font-size: 1.2rem;
+}
+
+.restrictions-wrapper{
+    width: inherit;
+    display: flex;
+    align-items: center
 }
 
 .wine-details-wrapper{
@@ -65,11 +71,34 @@ h5{
     margin-bottom: 0.5rem;
 }
 
+.wine-pricing-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.pricing-item-wrapper{
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+}
+
+.pricing-item-wrapper h6{
+    margin-right: 1rem;
+}
+
 
 .ingredients-wrapper{
+    margin-top: 0.5rem;
     list-style: none;
     flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+@media all and (min-width: 600px){
+    main{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
 }
